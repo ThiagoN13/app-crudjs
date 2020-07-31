@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm i && cd ./app && npm i cd ../server && npm i",
+    "start": "pm2 start process.config.js"
+  },
+  "author": "Thiago Nogueira",
+  "license": "ISC",
+  "devDependencies": {
+    "pm2": "^4.4.0"
+  }
+}
