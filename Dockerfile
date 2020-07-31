@@ -1,15 +1,25 @@
-FROM node:11-alpine
+FROM node:12-alpine
 
 WORKDIR ./
 
-COPY package.json .
+COPY . .
 
 RUN npm install --quiet
 
-COPY . .
- 
-RUN npm run build
+RUN cd ./public
+
+RUN npm install --quiet
+
+RUN cd ../server
+
+RUN npm install --quiet
+
+RUN cd ..
+
+CMD npm start
 
 EXPOSE 8080
 
-CMD npm start
+EXPOSE 3000
+
+COPY . .

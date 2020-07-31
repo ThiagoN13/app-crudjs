@@ -1,10 +1,10 @@
 {
-  "name": "app",
+  "name": "app-crudjs",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm i && cd ./app && npm i cd ../server && npm i",
-    "start": "pm2 start process.config.js"
+    "build": "npm i && cd ./public && npm i cd ../server && npm i",
+    "start": "pm2-runtime start process.config.js"
   },
   "author": "Thiago Nogueira",
   "license": "ISC",

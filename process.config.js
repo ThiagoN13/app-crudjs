@@ -4,6 +4,7 @@ module.exports = {
     cwd: './app/',
     script: 'npm',
     args: ['run', 'dev'],
+    exec_mode: 'cluster',
     watch: false
   }, {
     name: 'server',
