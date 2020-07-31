@@ -1,10 +1,9 @@
 module.exports = {
   apps: [{
     name: 'app',
-    cwd: './app/',
+    cwd: './public/',
     script: 'npm',
     args: ['run', 'dev'],
-    exec_mode: 'cluster',
     watch: false
   }, {
     name: 'server',
